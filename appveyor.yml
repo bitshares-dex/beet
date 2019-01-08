@@ -16,8 +16,9 @@ install:
     - npm -g install node-gyp
     - node --version
     - npm --version
+    - npm cache clean --force
     # install modules
-    - npm ci 
+    - npm ci  --no-optional
 build: off
 platform:
     - x64
