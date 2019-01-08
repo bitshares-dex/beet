@@ -11,7 +11,7 @@ before_build:
 install:
     # Get the latest stable version of Node.js or io.js
     - ps: Install-Product node $env:nodejs_version
-    - npm -g install npm@6
+    - npm -g install npm@4
     - npm -g install node-gyp
     - node --version
     - npm --version
